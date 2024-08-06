@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- SideBar -->
+        <aside id="sidebar" class="p-4">
+            <header class="mb-4">
+                <div class="notification-wrapper" data-count="5">
+                    <img src="./icons/mingcute_notification-fill.svg" alt="notification-bell" width="20px" />
+                </div>
+                <div class="menuButton">
+                    <img src="./icons/heroicons-solid_menu.svg" alt="menu" width="20px" />
+                </div>
+            </header>
+
+            <div class="text-center text-white">
+                <div
+                    class="user-circle fw-bold mb-4 rounded-circle d-flex justify-content-center align-items-center m-auto">
+                    J
+                </div>
+                <div class="fs-6 user-name">Joseph V.</div>
+                <div class="fst-italic fs-6 role">Admin</div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <hr class="horizontal-line" />
+            </div>
+
+            <div>
+                <ul class="text-white">
+                    <li class="p-2 d-flex gap-2" data-tooltip="Dashboard">
+                        <img src="./icons/ant-design_dashboard-filled.svg" alt="dashboard">
+                        <span class="menu-text">Dashboard</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Profile">
+                        <img src="./icons/lets-icons_user-fill.svg" alt="profile">
+                        <span class="menu-text">Profile</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Team Members">
+                        <img src="./icons/mdi_users-group.svg" alt="team members">
+                        <span class="menu-text">Team Members</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Contacts">
+                        <div>
+                            <img src="./icons/mdi_contact.svg" alt="contacts">
+                            <span class="menu-text">Contacts</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Email">
+                        <img src="./icons/ic_baseline-email.svg" alt="email">
+                        <span class="menu-text">Email</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Quote Request">
+                        <img src="./icons/ic_baseline-quora.svg" alt="quote request">
+                        <span class="menu-text">Quote Request</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Bid Management">
+                        <div>
+                            <img src="./icons/material-symbols_bid-landscape.svg" alt="bid management">
+                            <span class="menu-text">Bid Management</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Invites">
+                        <div>
+                            <img src="./icons/material-symbols_id-card.svg" alt="invites">
+                            <span class="menu-text">Invites</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Project Leads">
+                        <img src="./icons/fluent_projection-screen-20-filled.svg" alt="project leads">
+                        <span class="menu-text">Project Leads</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Search to Network">
+                        <div>
+                            <img src="./icons/mingcute_search-line.svg" alt="search to network">
+                            <span class="menu-text">Search to Network</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Visit Public Profile">
+                        <img src="./icons/mingcute_world-2-fill.svg" alt="visit">
+                        <span class="menu-text">Visit Public Profile</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Help">
+                        <img src="./icons/ic_round-help.svg" alt="help">
+                        <span class="menu-text">Help</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Settings">
+                        <div>
+                            <img src="./icons/solar_settings-bold.svg" alt="settings">
+                            <span class="menu-text">Settings</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- main content -->
+        <section class='main-content rounded-4 w-100'>
+            <header class='py-3 shadow'>
+                <div class='inner-header d-flex mx-4'>
+                    <!-- Button to show sidebar on mobile -->
+
+                    <div class="hamburger-menu menuButton d-lg-none" id="showSidebarBtn">
+                        <img src="./icons/hamburger-menu.svg" alt="burguer menu" width="30px" />
+                    </div>
+                    <div class='d-flex align-items-center'>
+                        <div><img class='rounded-circle mx-3' src="./images/53cabda87dd41c5bcc387f850e3c2b44.png"
+                                alt="profile-pic" width="30px" /></div>
+                        <div>
+                            <img src="./icons/mi_log-out.svg" alt="logout" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <div class='bg-white shadow p-4 m-4 rounded-4'>
+                    <div class="row">
+                        <div class="col-md-4 col-12 custom-dropdown mb-3">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fw-bold fs-6">Projects</h5>
+                            </div>
+                            <div class="dropdown-header justify-content-between d-flex rounded-3 p-3 text-secondary"
+                                onclick="toggleDropdown(this)">
+                                <span>All Projects</span>
+                                <div><img src="./icons/arrow-down.svg" alt="down-arrow" width="16px" /></div>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>Project 1</li>
+                                <li>Project 2</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 col-12 custom-dropdown mb-3">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fw-bold fs-6">Employees</h5>
+                            </div>
+                            <div class="dropdown-header justify-content-between d-flex rounded-3 p-3 text-secondary"
+                                onclick="toggleDropdown(this)">
+                                <span>All Employees</span>
+                                <div><img src="./icons/arrow-down.svg" alt="down-arrow" width="16px" /></div>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>Employee 1</li>
+                                <li>Employee 2</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 col-12 custom-dropdown mb-3">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fw-bold fs-6">Specialist</h5>
+                            </div>
+                            <div class="dropdown-header justify-content-between d-flex rounded-3 p-3 text-secondary"
+                                onclick="toggleDropdown(this)">
+                                <span>Specialist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-12 custom-dropdown mb-3">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fw-bold fs-6">Start Date</h5>
+                            </div>
+                            <div class="dropdown-header justify-content-between d-flex rounded-3 p-3 text-secondary"
+                                onclick="toggleDropdown(this)">
+                                <span>dd/mm/yy</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12 custom-dropdown mb-3">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fw-bold fs-6">End Date</h5>
+                            </div>
+                            <div class="dropdown-header justify-content-between d-flex rounded-3 p-3 text-secondary"
+                                onclick="toggleDropdown(this)">
+                                <span>dd/mm/yy</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12 custom-dropdown mb-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="fw-bold fs-6">&nbsp;</div>
+                            </div>
+                            <div>
+                                <button class="d-flex gap-2 filter-reports btn text-white fw-bold p-3 small fs-6"><img
+                                        src="./icons/filter-svgrepo-com.svg" width="20px" alt="filter"> Filter
+                                    Reports</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="rounded-4 p-4 bg-gray mx-4 shadow py-5">
+                    <div class="d-md-flex align-items-md-center">
+                        <div class="chart-width">
+                            <div class="chart-container">
+
+                                <div class="container">
+                                    <div>
+                                        <h2 class="fw-bold fs-5 text-center position-relative">Data</h2>
+                                    </div>
+                                    <div> <canvas id="myChart" width="180px"></canvas></div>
+                                </div>
+
+                                <div class="chart-center pt-4">
+                                    <div class="fs-6 fw-normal">Total</div>
+                                    <div class="fs-5 fw-bold">100</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-4 justify-content-center font-small">
+                            <div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="circle bg-1 rounded-circle"></div>
+                                    <div>
+                                        <div>No Work</div>
+                                        <div class="fw-bold">25%</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="circle bg-2 rounded-circle"></div>
+                                    <div>
+                                        <div>In Work</div>
+                                        <div class="fw-bold">54%</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="circle bg-3 rounded-circle"></div>
+                                    <div>
+                                        <div>No Work Saturday</div>
+                                        <div class="fw-bold">21%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="circle bg-4 rounded-circle"></div>
+                                    <div>
+                                        <div>No Work Sunday</div>
+                                        <div class="fw-bold">0%</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="circle bg-5 rounded-circle"></div>
+                                    <div>
+                                        <div>Work allocated Saturday</div>
+                                        <div class="fw-bold">0%</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="circle bg-6 rounded-circle"></div>
+                                    <div>
+                                        <div>Work allocated Saturday</div>
+                                        <div class="fw-bold">0%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive m-4">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td colspan="4"></td>
+                                <th colspan="3" class="fw-normal">No Work Allocated</th>
+                                <th colspan="3" class="fw-normal">No Work Allocated</th>
+                            </tr>
+                            <tr class="days-row">
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Contact No</th>
+                                <th>W</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                                <th>W</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="number-row">
+                                <td>1</td>
+                                <td>Willie D. Gutierrez</td>
+                                <td>willieutierrez@gmail.com</td>
+                                <td>00000</td>
+                                <td>31</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="number-row">
+                                <td>2</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>12345</td>
+                                <td>20</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+    </div>
+    </section>
+    </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

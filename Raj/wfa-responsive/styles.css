@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: #0C0C2F !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.user-circle {
+    background: #F2B705;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.collapsed .user-circle {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+}
+
+.collapsed .right-arrow {
+    display: none;
+}
+
+/* Initial sidebar width */
+#sidebar {
+    width: 320px;
+    display: block;
+}
+
+#sidebar header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sidebar.collapsed {
+    width: 100px;
+}
+
+#sidebar.collapsed header {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Notification count */
+.notification-wrapper {
+    position: relative;
+}
+
+.notification-wrapper::after {
+    content: attr(data-count);
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 100%;
+    font-size: 10px;
+}
+
+/* Hide text when collapsed */
+#sidebar.collapsed .menu-text {
+    display: none;
+}
+
+/* Center items */
+#sidebar ul {
+    width: 100%;
+    padding: 0;
+}
+
+#sidebar.collapsed ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    /* Add relative positioning */
+}
+
+#sidebar ul li:hover {
+    background: #191957;
+    cursor: pointer;
+    border-radius: 11px;
+}
+
+.menuButton {
+    cursor: pointer;
+}
+
+.collapsed .user-name {
+    display: none;
+}
+
+.collapsed .role {
+    display: none;
+}
+
+.horizontal-line {
+    width: 200px;
+    height: 0px;
+    left: 42px;
+    top: 260px;
+    opacity: 0.2;
+    border: 1px solid #FFFFFF;
+}
+
+/* Tooltips for icons */
+#sidebar.collapsed ul li[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: #191957;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 120%;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#sidebar.collapsed ul li:hover::before {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    #sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 10px;
+    }
+
+    #sidebar.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1000;
+        background: #0c0c2f;
+    }
+
+    .inner-header {
+        justify-content: space-between !important;
+    }
+
+
+}
+
+#showSidebarBtn {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    #showSidebarBtn {
+        display: block;
+    }
+}
+
+/* main-content */
+
+.main-content {
+    background: #E7E7E7;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.inner-header {
+    justify-content: flex-end;
+}
+
+.dropdown-btn {
+    background: gainsboro !important;
+}
+
+.dropdown-toggle::after {
+    font-size: 16px;
+}
+
+.w-10 {
+    width: 80px;
+}
+
+.table-header {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+}
+
+.table-header>div {
+    padding: 10px;
+    width: 100%;
+}
+
+
+.calendary {
+    background: #E4E4E4 !important;
+}
+
+.mr-4 {
+    margin-right: 1.5rem;
+}
+
+.row-container {
+    display: flex;
+}
+
+.row-container>div {
+    width: 100%;
+    background: gainsboro;
+}
+
+.calendary-left {
+    display: flex;
+    gap: 5px;
+}
+
+.calendary-right {
+    display: flex;
+    gap: 10px;
+}
+
+.date-name {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.dark-btn {
+    background: #0C0C2F !important;
+}
+
+.dark-red-btn {
+    background: #B72E00 !important;
+}
+
+.red-btn {
+    background: #D34516 !important;
+}
+
+.icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #C9C9C9;
+    text-align: center;
+    width: 20px;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.10) 1.95px 1.95px 2.6px;
+}
+
+.sea-blue {
+    background: #BDD7EE !important;
+}
+
+/* Dropdown Menu */
+.custom-dropdown {
+    position: relative;
+}
+
+.dropdown-header {
+    cursor: pointer;
+    background-color: #DFDFDF;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+.custom-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.dropdown-width {
+    width: 300px;
+}
+
+/* Dropdown Menu */
+
+.main-content {
+    background: #E7E7E7;
+}
+
+.dropdown-btn {
+    background: gainsboro !important;
+}
+
+.dropdown-toggle::after {
+    font-size: 16px;
+}
+
+.w-10 {
+    width: 80px;
+}
+
+.table-header {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+}
+
+.table-header>div {
+    padding: 10px;
+    width: 100%;
+}
+
+.calendary {
+    background: #EEEEEE;
+}
+
+.row-container {
+    display: flex;
+}
+
+.row-container>div {
+    width: 100%;
+    background: gainsboro;
+}
+
+.calendary-left {
+    display: flex;
+    gap: 5px;
+}
+
+.calendary-right {
+    display: flex;
+    gap: 10px;
+}
+
+.date-name {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.filter-reports {
+    background: #0c0c2f !important;
+}
+
+/* Chart section */
+
+.bg-gray {
+    background: gainsboro !important;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+}
+
+.bg-1 {
+    background: #af52de;
+}
+
+.bg-2 {
+    background: #007aff;
+}
+
+.bg-3 {
+    background: #ff9500;
+}
+
+.bg-4 {
+    background: #ffd54f;
+}
+
+.bg-5 {
+    background: #3bb1b9;
+}
+
+.bg-6 {
+    background: #96a6a6;
+}
+
+
+.chart-container {
+    position: relative;
+    width: 40%;
+    margin: auto;
+}
+
+.chart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Chart section */
+
+/* Table styles */
+
+.bg-gray-2 {
+    background: #e4e4e4;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #sidebar {
+        position: absolute;
+        background: #0C0C2F;
+        z-index: 9999;
+    }
+
+    .chart-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .chart-width {
+        width: 100%;
+    }
+
+    .chart-container {
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .chart-width {
+        width: 50%;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .chart-width {
+        width: 50%;
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .chart-width {
+        width: 50%;
+    }
+}

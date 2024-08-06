@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Calendar</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="d-flex">
+
+        <!-- SideBar -->
+        <aside id="sidebar" class="p-4">
+            <header class="mb-4">
+                <div class="notification-wrapper" data-count="5">
+                    <img src="./icons/mingcute_notification-fill.svg" alt="notification-bell" width="20px" />
+                </div>
+                <div class="menuButton">
+                    <img src="./icons/heroicons-solid_menu.svg" alt="menu" width="20px" />
+                </div>
+            </header>
+
+            <div class="text-center text-white">
+                <div
+                    class="user-circle fw-bold mb-4 rounded-circle d-flex justify-content-center align-items-center m-auto">
+                    J
+                </div>
+                <div class="fs-6 user-name">Joseph V.</div>
+                <div class="fst-italic fs-6 role">Admin</div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <hr class="horizontal-line" />
+            </div>
+
+            <div>
+                <ul class="text-white">
+                    <li class="p-2 d-flex gap-2" data-tooltip="Dashboard">
+                        <img src="./icons/ant-design_dashboard-filled.svg" alt="dashboard">
+                        <span class="menu-text">Dashboard</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Profile">
+                        <img src="./icons/lets-icons_user-fill.svg" alt="profile">
+                        <span class="menu-text">Profile</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Team Members">
+                        <img src="./icons/mdi_users-group.svg" alt="team members">
+                        <span class="menu-text">Team Members</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Contacts">
+                        <div>
+                            <img src="./icons/mdi_contact.svg" alt="contacts">
+                            <span class="menu-text">Contacts</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Email">
+                        <img src="./icons/ic_baseline-email.svg" alt="email">
+                        <span class="menu-text">Email</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Quote Request">
+                        <img src="./icons/ic_baseline-quora.svg" alt="quote request">
+                        <span class="menu-text">Quote Request</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Bid Management">
+                        <div>
+                            <img src="./icons/material-symbols_bid-landscape.svg" alt="bid management">
+                            <span class="menu-text">Bid Management</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Invites">
+                        <div>
+                            <img src="./icons/material-symbols_id-card.svg" alt="invites">
+                            <span class="menu-text">Invites</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Project Leads">
+                        <img src="./icons/fluent_projection-screen-20-filled.svg" alt="project leads">
+                        <span class="menu-text">Project Leads</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Search to Network">
+                        <div>
+                            <img src="./icons/mingcute_search-line.svg" alt="search to network">
+                            <span class="menu-text">Search to Network</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Visit Public Profile">
+                        <img src="./icons/mingcute_world-2-fill.svg" alt="visit">
+                        <span class="menu-text">Visit Public Profile</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2" data-tooltip="Help">
+                        <img src="./icons/ic_round-help.svg" alt="help">
+                        <span class="menu-text">Help</span>
+                    </li>
+                    <li class="p-2 d-flex gap-2 justify-content-between" data-tooltip="Settings">
+                        <div>
+                            <img src="./icons/solar_settings-bold.svg" alt="settings">
+                            <span class="menu-text">Settings</span>
+                        </div>
+                        <img class="align-items-center right-arrow" src="./icons/Arrow - Down 2.svg" alt="settings" />
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class='main-content rounded-4 mr-4 my-4 w-100'>
+            <header class='py-3 shadow'>
+                <div class='inner-header d-flex mx-4'>
+                    <!-- Button to show sidebar on mobile -->
+
+                    <div class="hamburger-menu menuButton d-lg-none" id="showSidebarBtn">
+                        <img src="./icons/hamburger-menu.svg" alt="burguer menu" width="30px" />
+                    </div>
+                    <div class='d-flex align-items-center'>
+                        <div><img class='rounded-circle mx-3' src="./images/53cabda87dd41c5bcc387f850e3c2b44.png"
+                                alt="profile-pic" width="30px" /></div>
+                        <div>
+                            <img src="./icons/mi_log-out.svg" alt="logout" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <div class='bg-white shadow p-4 m-4 rounded-4'>
+                    <div class="row">
+                        <div class="col-md-4 col-12 custom-dropdown mb-3">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fw-bold fs-6">Projects</h5>
+                            </div>
+                            <div class="dropdown-header justify-content-between d-flex rounded-3 p-3 text-secondary"
+                                onclick="toggleDropdown(this)">
+                                <span>All Projects</span>
+                                <div><img src="./icons/arrow-down.svg" alt="down-arrow" width="16px" /></div>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>Project 1</li>
+                                <li>Project 2</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 col-12 custom-dropdown mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fw-bold fs-6">Employees</h5>
+                            </div>
+                            <div class="dropdown-header justify-content-between d-flex rounded-3 p-3 text-secondary"
+                                onclick="toggleDropdown(this)">
+                                <span>All Employees</span>
+                                <div><img src="./icons/arrow-down.svg" alt="down-arrow" width="16px" /></div>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>Employee 1</li>
+                                <li>Employee 2</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-12 custom-dropdown">
+
+                            <div class="dropdown-header justify-content-between d-flex rounded-3 p-3 text-secondary"
+                                onclick="toggleDropdown(this)">
+                                <span>Projects</span>
+                                <div><img src="./icons/arrow-down.svg" alt="down-arrow" width="16px" /></div>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>Project 1</li>
+                                <li>Project 2</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Calendar -->
+
+                <div class='calendary m-4 p-4 rounded-4 shadow'>
+                    <header class="mb-3 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <div class="d-flex  flex-sm-row align-items-center gap-2 gap-md-4 mb-2 mb-md-0">
+                            <button class="btn dark-btn text-white rounded">Today</button>
+                            <div class="d-flex gap-2">
+                                <div class="btn btn-light shadow rounded-circle p-0 d-flex align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
+                                    <img src="./icons/left-arrow.svg" width="16px" alt="left-arrow" />
+                                </div>
+                                <div class="btn btn-light shadow rounded-circle p-0 d-flex align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px;">
+                                    <img src="./icons/right-arrow.svg" width="16px" alt="right-arrow" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fw-bold fs-4 text-center mb-2 mb-md-0">May 2024</div>
+
+                        <div class="d-flex flex-row gap-2 gap-md-3 calendary-right">
+                            <button class="btn dark-red-btn text-white rounded">Week</button>
+                            <button class="btn red-btn text-white rounded">Month</button>
+                            <button class="btn red-btn text-white rounded">Year</button>
+                        </div>
+                    </header>
+
+                    <div class="container">
+                        <div class="row calendary">
+                            <div class="col-12 col-md-2 mt-4 d-none d-md-flex flex-column flex-wrap text-center">
+                                <div class="py-2">7:30 am</div>
+                                <div class="py-2">9:00 am</div>
+                                <div class="py-2">10:00 am</div>
+                                <div class="py-2">11:30 am</div>
+                                <div class="py-2">4:00 am</div>
+                                <div class="py-2">5:30 am</div>
+                                <div class="py-2">7:00 am</div>
+                                <div class="py-2">8:30 am</div>
+                            </div>
+
+                            <div class="col-12 col-md-10">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered border-white text-center">
+                                        <thead class="bg-white">
+                                            <tr>
+                                                <th>Mon</th>
+                                                <th>Tue</th>
+                                                <th>Wed</th>
+                                                <th>Thu</th>
+                                                <th>Fri</th>
+                                                <th>Sat</th>
+                                                <th>Sun</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="sea-blue">Project 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="sea-blue">Project 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="sea-blue">Project 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="sea-blue">Project 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">Project 1</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="sea-blue">Project 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="sea-blue">Project 1</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">--</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-gray">--</td>
+                                                <td class="bg-gray">Project 1</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">--</td>
+                                                <td class="bg-gray">--</td>
+                                                <td class="sea-blue">--</td>
+                                                <td class="bg-gray">--</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+    </div>
+    </section>
+    </section>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

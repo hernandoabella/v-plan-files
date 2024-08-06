@@ -1,0 +1,11 @@
+.bg-gray {
+    background: gainsboro !important;
+}
+
+.text-orange {
+    color: orange;
+}
+
+.no-border {
+    border-width: 0px !important;
+}
