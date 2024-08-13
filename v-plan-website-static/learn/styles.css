@@ -1,0 +1,273 @@
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 4rem 1.5rem; /* Top padding and general padding */
+    margin-top: 8rem; /* Adjust margin-top as needed */
+    background-image: url('../images/hero-img-about-01.png'); /* Replace with the correct path */
+    background-size: cover;
+    background-position: bottom;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-heading {
+    font-size: 4rem; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Container for the section */
+.estimating-services {
+    padding: 4rem 1.5rem;
+    background-color: white;
+    color: black;
+}
+
+/* Grid styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Text content styling */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+.text-content p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+/* Image content styling */
+.image-content {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section styling */
+.vplan-estimation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 4rem;
+    background-color: white;
+    color: black;
+}
+
+/* Content container styling */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+/* Responsive grid layout */
+@media (min-width: 768px) {
+    .content-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Left side styling */
+.left-side {
+    flex: 1;
+    padding: 2.5rem;
+}
+
+.left-side h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #007BFF; /* Replace with your blue text color */
+}
+
+.left-side p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+/* Right side styling */
+.right-side {
+    flex: 1;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.software-section {
+    padding: 4rem 2.5rem;
+    background-color: white;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+.left-side {
+    padding: 2.5rem;
+}
+
+.left-side h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #007BFF;
+}
+
+.left-side p {
+    margin-bottom: 2rem;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.software-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icons-section {
+    margin-top: 4rem;
+}
+
+.icon-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    .icon-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .icon-row {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section {
+    position: relative;
+    padding: 4rem 2.5rem;
+    text-align: center;
+    color: white;
+    background-image: url('../images/hero-img-about-01.png');
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2.5rem;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 10;
+    padding: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .highlight {
+    font-weight: 800;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #EBC22E;
+    color: black;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px; /* Full rounded */
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #d1a727;
+  }

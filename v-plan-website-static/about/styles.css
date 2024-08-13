@@ -1,0 +1,372 @@
+/* styles/HeroSection.css */
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: calc(4rem + 20px);
+  /* Ajusta el padding-top si es necesario */
+  background-image: url('../images/hero-img-about-01.png');
+  /* Asegúrate de que la imagen esté en la ruta correcta */
+  background-size: cover;
+  background-position: center;
+  min-height: 20rem;
+  /* Ajusta según sea necesario */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Overlay opcional */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  /* Ajusta el padding si es necesario */
+}
+
+.hero-title {
+  font-size: 3rem;
+  /* Ajusta el tamaño de la fuente según sea necesario */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  /* Ajusta el margen inferior según sea necesario */
+}
+
+
+/* styles/Introduction.css */
+.introduction {
+  padding: 4rem 2.5rem;
+  background-color: white;
+  color: black;
+}
+
+.introduction-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .introduction-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #0056a0;
+  /* Ajusta el color si es necesario */
+}
+
+.description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+}
+
+.icon-text {
+  color: #0056a0;
+  /* Ajusta el color si es necesario */
+  font-weight: bold;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.right-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.divider {
+  border: 2px solid #0056a0;
+  /* Ajusta el color si es necesario */
+  margin: 2rem 0;
+}
+
+.additional-info {
+  font-size: 1.125rem;
+}
+
+/* styles/EstimatingServices.css */
+.estimating-services {
+  padding: 4rem 2.5rem;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #0056a0;
+  /* Ajusta el color si es necesario */
+}
+
+.description {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* styles/ServicesSection.css */
+.services-section {
+  padding: 4rem 2.5rem;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #0056a0;
+  /* Ajusta el color si es necesario */
+}
+
+.description {
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .service-row {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.blue-text {
+  color: #0056a0;
+  /* Ajusta el color si es necesario */
+}
+
+/* styles/CTASection.css */
+.cta-section {
+  position: relative;
+  padding: 4rem 2.5rem;
+  text-align: center;
+  color: white;
+  background-image: url('/hero-img-about-01.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2.5rem;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 2.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ebc22e;
+  color: black;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #d1a31e;
+  /* Ajusta el color del hover si es necesario */
+}
+
+/* styles/OurOrigins.css */
+.our-origins {
+  padding: 4rem 2.5rem;
+  background-color: white;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1e40af; /* Cambia este color a tu color azul deseado */
+}
+
+.description {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.additional-info {
+  font-size: 1.125rem;
+}
+
+/* styles/CTASection2.css */
+.cta-section {
+  position: relative;
+  padding: 4rem 2.5rem;
+  text-align: center;
+  color: white;
+  background-image: url('/hero-img-about-01.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  padding: 2.5rem;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 2.5rem;
+}
+
+.headline {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #EBC22E;
+  color: black;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px; /* Fully rounded button */
+  text-decoration: none;
+}
