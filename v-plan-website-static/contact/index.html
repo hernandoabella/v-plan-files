@@ -7,40 +7,38 @@
     <title>Contact</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon-01.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
-    <header id="header" class="header">
-        <div class="container">
-            <!-- Logo -->
-            <a href="/" class="logo">
-                <img src="./images/v-plan-logo-white.png" alt="V-Plan Logo" id="logo">
-            </a>
 
-            <!-- Navigation Menu -->
-            <nav class="nav">
-                <a href="/about" class="nav-link">About</a>
-                <div class="dropdown">
-                    <button class="dropdown-button">Solutions
-                        <span class="arrow-down"></span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <a href="/solutions/bid-management" class="dropdown-item">Bid Management</a>
-                        <a href="/solutions/estimation-services" class="dropdown-item">Estimation Services</a>
-                        <a href="/solutions/construction-management" class="dropdown-item">Construction Management
-                            Software</a>
-                    </div>
-                </div>
-                <a href="/learn" class="nav-link">Learn</a>
-                <a href="/contact" class="nav-link">Contact</a>
-                <a href="/blog" class="nav-link">Blogs</a>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="/"><img src="../images/v-plan-logo-white.png" alt="logo" /></a></div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/About">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Solutions <img src="../images/down-arrow.svg" alt="Down Arrow"
+                            class="dropdown-arrow" /></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Bid Management</a></li>
+                        <li><a href="#">Estimation Services</a></li>
+                        <li><a href="#">Construction Management Software</a></li>
+                    </ul>
+                </li>
+                <li><a href="/learn">Learn</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/blog/">Blogs</a></li>
+            </ul>
+        </nav>
     </header>
-
     <section class="hero">
-        <div class="content-container">
+        <div class="content-container container">
             <div class="left-side">
                 <h1>
                     Start Managing Your Business and Projects Smartly and Profitably!
@@ -56,13 +54,15 @@
     </section>
 
     <section class="contact-section">
-        <div class="container">
-            <h2 class="title">Contact Us</h2>
+        <div>
+
             <div class="content">
                 <div class="image-container">
-                    <img src="../images/james-sullivan-ESZRBtkQ_f8-unsplash.jpg" alt="Contact Image" class="contact-image" />
+                    <img src="../images/james-sullivan-ESZRBtkQ_f8-unsplash.jpg" alt="Contact Image"
+                        class="contact-image" />
                 </div>
                 <div class="contact-info">
+                    <h2 class="title">Contact Us</h2>
                     <div class="contact-item">
                         <i class="icon-envelope"></i>
                         <div class="info">
@@ -107,9 +107,9 @@
 
 
             <div class="logos">
-                <img src="./images/capterra.png" alt="Logo 1" class="logo">
-                <img src="./images/fi_alumni_badge-transparent.png" alt="Logo 2" class="logo">
-                <img src="./images/wsibcspaat.png" alt="Logo 3" class="logo">
+                <img src="../images/capterra.png" alt="Logo 1" class="logo">
+                <img src="../images/fi_alumni_badge-transparent.png" alt="Logo 2" class="logo">
+                <img src="../images/wsibcspaat.png" alt="Logo 3" class="logo">
             </div>
 
 
@@ -119,11 +119,11 @@
 
 
             <div class="social-icons">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <img src="path/to/twitter-icon.png" alt="Twitter" class="icon">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="../images/twitter.png" alt="Twitter" class="icon">
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <img src="path/to/linkedin-icon.png" alt="LinkedIn" class="icon">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="../images/linkedin.png" alt="LinkedIn" class="icon">
                 </a>
             </div>
         </div>
