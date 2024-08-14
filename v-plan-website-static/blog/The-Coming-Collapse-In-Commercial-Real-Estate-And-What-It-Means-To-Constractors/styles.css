@@ -1,0 +1,38 @@
+.post-title {
+  padding: 20px;
+  background: rgb(47, 77, 126);
+  background: radial-gradient(circle, rgba(47, 77, 126, 1) 0%, rgba(35, 58, 94, 1) 35%, rgba(47, 77, 126, 1) 100%);
+  color: #fff;
+
+}
+
+.post-title h1 {
+  width: 800px;
+  margin: auto;
+}
+
+.post {
+  width: 800px;
+  margin: auto;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.sidebyside {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .post-title h1 {
+      width: 100%;
+  }
+
+  .post {
+      width: 100%;
+  }
+
+  .sidebyside {
+      flex-direction: column;
+  }
+}
