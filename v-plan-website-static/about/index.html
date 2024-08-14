@@ -7,36 +7,35 @@
     <title>About us</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon-01.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
-    <header id="header" class="header">
-        <div class="container">
-            <!-- Logo -->
-            <a href="/" class="logo">
-                <img src="./images/v-plan-logo-white.png" alt="V-Plan Logo" id="logo">
-            </a>
 
-            <!-- Navigation Menu -->
-            <nav class="nav">
-                <a href="/about" class="nav-link">About</a>
-                <div class="dropdown">
-                    <button class="dropdown-button">Solutions
-                        <span class="arrow-down"></span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <a href="/solutions/bid-management" class="dropdown-item">Bid Management</a>
-                        <a href="/solutions/estimation-services" class="dropdown-item">Estimation Services</a>
-                        <a href="/solutions/construction-management" class="dropdown-item">Construction Management
-                            Software</a>
-                    </div>
-                </div>
-                <a href="/learn" class="nav-link">Learn</a>
-                <a href="/contact" class="nav-link">Contact</a>
-                <a href="/blog" class="nav-link">Blogs</a>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="/"><img src="../images/v-plan-logo-white.png" alt="logo" /></a></div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/About">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Solutions <img src="../images/down-arrow.svg" alt="Down Arrow"
+                            class="dropdown-arrow" /></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Bid Management</a></li>
+                        <li><a href="#">Estimation Services</a></li>
+                        <li><a href="#">Construction Management Software</a></li>
+                    </ul>
+                </li>
+                <li><a href="/learn">Learn</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/blog/">Blogs</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="hero-section">
@@ -47,8 +46,7 @@
     </section>
 
     <section class="introduction">
-        <div class="introduction-container">
-            <!-- Left Side -->
+        <div class="introduction-container container">
             <div class="left-side">
                 <h2 class="title">Introducing Our New Construction Division</h2>
                 <p class="description">
@@ -64,23 +62,23 @@
                 </p>
                 <div class="icons">
                     <div class="icon-item">
-                        <img src="/icon-about-03.png" alt="Trade Contractors Icon" class="icon" />
+                        <img src="../images/icon-about-03.png" alt="Trade Contractors Icon" class="icon" />
                         <span class="icon-text">Trade Contractors</span>
                     </div>
                     <div class="icon-item">
-                        <img src="/icon-about-04.png" alt="Project Owners Icon" class="icon" />
+                        <img src="../images/icon-about-04.png" alt="Project Owners Icon" class="icon" />
                         <span class="icon-text">Project Owners</span>
                     </div>
                     <div class="icon-item">
-                        <img src="/icon-about-05.png" alt="General Contractors Icon" class="icon" />
+                        <img src="../images/icon-about-05.png" alt="General Contractors Icon" class="icon" />
                         <span class="icon-text">General Contractors</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Side -->
+
             <div class="right-side">
-                <img src="/hero-img-about-00.png" alt="Right Side Image" class="right-image" />
+                <img src="../images/hero-img-about-00.png" alt="Right Side Image" class="right-image" />
                 <hr class="divider" />
                 <p class="additional-info">
                     Our on-demand project-estimating services and custom construction-management software, Realtraker™,
@@ -94,7 +92,7 @@
 
     <section class="estimating-services">
         <div class="container">
-            <!-- Left Side -->
+
             <div class="left-side">
                 <h2 class="title">Quantity Takeoff and Estimating Services</h2>
                 <p class="description">
@@ -113,14 +111,14 @@
                 </p>
             </div>
 
-            <!-- Right Side -->
+
             <div class="right-side">
-                <img src="/image-01.png" alt="Estimating Services" class="image" />
+                <img src="../images/image-01.png" alt="Estimating Services" class="image" />
             </div>
         </div>
     </section>
 
-    <!-- components/ServicesSection.html -->
+
     <section class="services-section">
         <h2 class="title">
             Realtraker™ — The Ultimate Construction Management Software
@@ -133,63 +131,63 @@
         </p>
 
         <div class="services-container">
-            <!-- First Row -->
+
             <div class="service-row">
                 <div class="service-item">
-                    <img src="/icon-01.png" alt="Seamless Communication" class="icon" />
+                    <img src="../images/icon-01.png" alt="Seamless Communication" class="icon" />
                     <span>
                         <div class="font-bold">Seamlessly communicate</div> with personnel, subs, vendors and workers in
                         real time
                     </span>
                 </div>
                 <div class="service-item">
-                    <img src="/icon-02.png" alt="Cloud Storage" class="icon" />
+                    <img src="../images/icon-02.png" alt="Cloud Storage" class="icon" />
                     <span>
                         Store all of your project files inside of our <div class="font-bold">secure cloud storage</div>
                     </span>
                 </div>
                 <div class="service-item">
-                    <img src="/icon-05.png" alt="Database Management" class="icon" />
+                    <img src="../images/icon-05.png" alt="Database Management" class="icon" />
                     <span>
                         Create and manage your <div class="font-bold">database of contacts, vendors and equipment</div>
                     </span>
                 </div>
                 <div class="service-item">
-                    <img src="/icon-04.png" alt="Daily Reports" class="icon" />
+                    <img src="../images/icon-04.png" alt="Daily Reports" class="icon" />
                     <span>Create and <div class="font-bold">automatically send daily reports</div></span>
                 </div>
                 <div class="service-item">
-                    <img src="/icon-about-07.png" alt="Project Finance" class="icon" />
+                    <img src="../images/icon-about-07.png" alt="Project Finance" class="icon" />
                     <span>Manage <div class="font-bold">project finance and accounts</div></span>
                 </div>
             </div>
 
-            <!-- Second Row -->
+
             <div class="service-row">
                 <div class="service-item">
-                    <img src="/icon-about-02.png" alt="Cash Flow" class="icon" />
+                    <img src="../images/icon-about-02.png" alt="Cash Flow" class="icon" />
                     <span>
                         <div class="font-bold">View projected cash flow</div> versus revenue
                     </span>
                 </div>
                 <div class="service-item">
-                    <img src="/icon-03.png" alt="Live Estimates" class="icon" />
+                    <img src="../images/icon-03.png" alt="Live Estimates" class="icon" />
                     <span>
                         <div class="font-bold">Create live estimates</div> without spreadsheets
                     </span>
                 </div>
                 <div class="service-item">
-                    <img src="/icon-about-01.png" alt="Share Content" class="icon" />
+                    <img src="../images/icon-about-01.png" alt="Share Content" class="icon" />
                     <span>
                         <div class="font-bold">Share project content</div> with your entire team in real time
                     </span>
                 </div>
                 <div class="service-item">
-                    <img src="/icon-about-08.png" alt="Procurement" class="icon" />
+                    <img src="../images/icon-about-08.png" alt="Procurement" class="icon" />
                     <span>Manage <div class="font-bold">procurement, purchasing, and inventory</div></span>
                 </div>
                 <div class="service-item">
-                    <img src="/icon-about-09.png" alt="Customer Interface" class="icon" />
+                    <img src="../images/icon-about-09.png" alt="Customer Interface" class="icon" />
                     <span>View <div class="font-bold">real-time customer and subcontractor interface</div></span>
                 </div>
             </div>
@@ -197,16 +195,16 @@
     </section>
 
     <section class="cta-section">
-        <div class="overlay"></div> <!-- Optional overlay -->
+        <div class="overlay"></div>
         <div class="content">
-            <h2 class="title">
+            <h2>
                 Realtraker™ is your all-in-one solution for managing your entire workflow and keeping things under
                 budget, which helps your company increase profitability.
                 <br /><br />
                 You can try Realtraker™ with our FREE TRIAL and see the difference it can bring to your next
                 construction project from preplanning, bidding, budgeting and everything in between.
             </h2>
-            <a href="/contact" class="cta-button">
+            <a href="#" class="cta-button">
                 Book a Call With V Plan Now
             </a>
         </div>
@@ -214,7 +212,7 @@
 
     <section class="our-origins">
         <div class="grid-container">
-            <!-- Left Side -->
+
             <div class="text-container">
                 <h2 class="title">Our Origins</h2>
                 <p class="description">
@@ -229,9 +227,9 @@
                 </p>
             </div>
 
-            <!-- Right Side -->
+
             <div class="image-container">
-                <img src="/section-img-about-01.png" alt="Raj Kachu" class="image" />
+                <img src="../images/section-img-about-01.png" alt="Raj Kachu" class="image" />
                 <p class="additional-info">
                     He created the Realtraker™ software to go alongside V Plan because he felt companies needed a better
                     way to manage everything involved with the day-to-day tasks of overseeing construction projects. He
@@ -243,44 +241,42 @@
     </section>
 
     <section class="cta-section">
-        <div class="overlay"></div> <!-- Optional overlay -->
+        <div class="overlay"></div>
         <div class="content">
             <h2 class="headline">Contact us today and see the V Plan difference.</h2>
-            <a href="/contact" class="cta-button">Book a Call With V Plan Now</a>
+            <a href="#" class="cta-button">Book a Call With V Plan Now</a>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <!-- Dirección -->
+
             <p class="address">
                 209, 918 Dundas Street, East, Mississauga, L4Y 4H9, ON, Canada
             </p>
 
-            <!-- Logotipos -->
+
             <div class="logos">
-                <img src="./images/capterra.png" alt="Logo 1" class="logo">
-                <img src="./images/fi_alumni_badge-transparent.png" alt="Logo 2" class="logo">
-                <img src="./images/wsibcspaat.png" alt="Logo 3" class="logo">
+                <img src="../images/capterra.png" alt="Logo 1" class="logo">
+                <img src="../images/fi_alumni_badge-transparent.png" alt="Logo 2" class="logo">
+                <img src="../images/wsibcspaat.png" alt="Logo 3" class="logo">
             </div>
 
-            <!-- Texto de copyright -->
+
             <p class="copyright">
-                &copy; <span id="year"></span> RealTraker™. All rights reserved.
+                &copy; <span id="year"></span> The V Plan. All rights reserved.
             </p>
 
-            <!-- Iconos de redes sociales -->
+
             <div class="social-icons">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <img src="path/to/twitter-icon.png" alt="Twitter" class="icon">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="../images/twitter.png" alt="Twitter" class="icon">
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <img src="path/to/linkedin-icon.png" alt="LinkedIn" class="icon">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="../images/linkedin.png" alt="LinkedIn" class="icon">
                 </a>
             </div>
         </div>
-
-
 
         <script>
             // Set the current year in the copyright text
