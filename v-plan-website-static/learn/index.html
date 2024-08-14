@@ -7,39 +7,36 @@
     <title>Learn</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon-01.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
 
-    <header id="header" class="header">
-        <div class="container">
-            <!-- Logo -->
-            <a href="/" class="logo">
-                <img src="./images/v-plan-logo-white.png" alt="V-Plan Logo" id="logo">
-            </a>
-
-            <!-- Navigation Menu -->
-            <nav class="nav">
-                <a href="/about" class="nav-link">About</a>
-                <div class="dropdown">
-                    <button class="dropdown-button">Solutions
-                        <span class="arrow-down"></span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <a href="/solutions/bid-management" class="dropdown-item">Bid Management</a>
-                        <a href="/solutions/estimation-services" class="dropdown-item">Estimation Services</a>
-                        <a href="/solutions/construction-management" class="dropdown-item">Construction Management
-                            Software</a>
-                    </div>
-                </div>
-                <a href="/learn" class="nav-link">Learn</a>
-                <a href="/contact" class="nav-link">Contact</a>
-                <a href="/blog" class="nav-link">Blogs</a>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="/"><img src="../images/v-plan-logo-white.png" alt="logo" /></a></div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/About">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Solutions <img src="../images/down-arrow.svg" alt="Down Arrow"
+                            class="dropdown-arrow" /></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Bid Management</a></li>
+                        <li><a href="#">Estimation Services</a></li>
+                        <li><a href="#">Construction Management Software</a></li>
+                    </ul>
+                </li>
+                <li><a href="/learn">Learn</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/blog/">Blogs</a></li>
+            </ul>
+        </nav>
     </header>
-
     <section class="hero-section">
         <div class="overlay"></div>
         <div class="content">
@@ -80,7 +77,7 @@
         </div>
     </section>
 
-    <section class="vplan-estimation">
+    <section class="vplan-estimation container">
         <div class="content-container">
             <!-- Left Side -->
             <div class="left-side">
@@ -119,7 +116,7 @@
     </section>
 
     <section class="software-section">
-        <div class="content-container">
+        <div class="content-container container">
             <div class="left-side">
                 <h2>REALTRAKER™</h2>
                 <p>
@@ -140,7 +137,7 @@
         </div>
 
         <div class="icons-section">
-            <div class="icon-row">
+            <div class="icon-row container">
                 <div class="icon-item">
                     <img src="../images/icon-solutions-01.png" alt="Feature 1" class="icon" />
                     <p>Manage your employee, supplier and vendor database</p>
@@ -164,7 +161,7 @@
                 </div>
             </div>
 
-            <div class="icon-row">
+            <div class="icon-row container">
                 <div class="icon-item">
                     <img src="../images/plan-01.png" alt="Feature 6" class="icon" />
                     <p>Create and track estimates, purchase orders, and finances</p>
@@ -185,80 +182,74 @@
         </div>
     </section>
 
-    <section
-        className="relative flex flex-col md:flex-row items-center justify-between min-h-screen pt-16 md:px-32 bg-white">
-        <div className="absolute inset-0 bg-cover bg-center"></div>
-
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full">
-            <div className="md:w-1/2 mb-8 md:mb-0 p-10">
-                <p className="text-lg mb-8">
-                    These are only a few of the things that Realtraker™​ can provide for
+    <section>
+        <div class="container">
+            <div class="left-side">
+                <div class="video-wrapper">
+                    <iframe title="about v-plan" src="https://player.vimeo.com/video/657890377" width="320" height="180"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="right-side">
+                <p>
+                    These are only a few of the things that Realtraker™ can provide for
                     you.
-                    <br />
-                    <br />
+                    <br /><br />
                     Check out the video guides below to learn more in-depth about what
-                    Realtraker™​ can give your business. You can try Realtraker for FREE
+                    Realtraker™ can give your business. You can try Realtraker for FREE
                     using our trial available here.
-                    <br />
-                    <br />
+                    <br /><br />
                     From estimations to keeping track of your projects, V Plan is the
                     only team you need on your side to bring more profit and less hassle
                     to your contract jobs.
                 </p>
             </div>
-
-            <div className="md:w-1/2">
-                <div className="p-10">
-                    <div style=" paddingBottom: 56.25%">
-                        <iframe title="about v-plan" src="https://player.vimeo.com/video/657890377" width="320"
-                            height="180" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture"
-                            allowFullScreen className="absolute top-0 left-0 w-full h-full"></iframe>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
+
+
+
 
     <section class="cta-section">
         <div class="overlay"></div>
         <div class="content">
-          <h2>
-            Give us a call today and see how the <br />
-            <span class="highlight">V Plan</span> difference can benefit
-            your business.
-          </h2>
-          <a href="/contact" class="cta-button">
-            Book a Call With V Plan Now
-          </a>
+            <h2>
+                Give us a call today and see how the <br />
+                <span class="highlight">V Plan</span> difference can benefit
+                your business.
+            </h2>
+            <a href="/contact" class="cta-button">
+                Book a Call With V Plan Now
+            </a>
         </div>
-      </section>
+    </section>
 
     <footer class="footer">
         <div class="container">
-            <!-- Dirección -->
+
             <p class="address">
                 209, 918 Dundas Street, East, Mississauga, L4Y 4H9, ON, Canada
             </p>
 
-            <!-- Logotipos -->
+
             <div class="logos">
-                <img src="./images/capterra.png" alt="Logo 1" class="logo">
-                <img src="./images/fi_alumni_badge-transparent.png" alt="Logo 2" class="logo">
-                <img src="./images/wsibcspaat.png" alt="Logo 3" class="logo">
+                <img src="../images/capterra.png" alt="Logo 1" class="logo">
+                <img src="../images/fi_alumni_badge-transparent.png" alt="Logo 2" class="logo">
+                <img src="../images/wsibcspaat.png" alt="Logo 3" class="logo">
             </div>
 
-            <!-- Texto de copyright -->
+
             <p class="copyright">
                 &copy; <span id="year"></span> RealTraker™. All rights reserved.
             </p>
 
-            <!-- Iconos de redes sociales -->
+
             <div class="social-icons">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <img src="path/to/twitter-icon.png" alt="Twitter" class="icon">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="../images/twitter.png" alt="Twitter" class="icon">
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <img src="path/to/linkedin-icon.png" alt="LinkedIn" class="icon">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <img src="../images/linkedin.png" alt="LinkedIn" class="icon">
                 </a>
             </div>
         </div>
