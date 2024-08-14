@@ -2,9 +2,10 @@
     position: relative;
     text-align: center;
     color: white;
-    padding: 4rem 1.5rem; /* Top padding and general padding */
-    margin-top: 8rem; /* Adjust margin-top as needed */
-    background-image: url('../images/hero-img-about-01.png'); /* Replace with the correct path */
+    padding: 4rem 1.5rem;
+    /* Top padding and general padding */
+    background-image: url('../images/hero-img-about-01.png');
+    /* Replace with the correct path */
     background-size: cover;
     background-position: bottom;
 }
@@ -22,14 +23,14 @@
 }
 
 .hero-heading {
-    font-size: 4rem; /* Adjust as needed */
+    font-size: 4rem;
+    /* Adjust as needed */
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
 /* Container for the section */
 .estimating-services {
-    padding: 4rem 1.5rem;
     background-color: white;
     color: black;
 }
@@ -82,8 +83,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    padding-top: 4rem;
     background-color: white;
     color: black;
 }
@@ -116,7 +115,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
-    color: #007BFF; /* Replace with your blue text color */
+    color: #2F4D7E;
 }
 
 .left-side p {
@@ -132,7 +131,8 @@
 .video-wrapper {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
 }
@@ -165,13 +165,6 @@
 
 .left-side {
     padding: 2.5rem;
-}
-
-.left-side h2 {
-    font-size: 1.875rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #007BFF;
 }
 
 .left-side p {
@@ -234,40 +227,41 @@
     background-image: url('../images/hero-img-about-01.png');
     background-size: cover;
     background-position: bottom;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     padding: 2.5rem;
-  }
-  
-  .content {
+}
+
+.content {
     position: relative;
     z-index: 10;
     padding: 2.5rem;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-  }
-  
-  .highlight {
+}
+
+.highlight {
     font-weight: 800;
-  }
-  
-  .cta-button {
+}
+
+.cta-button {
     display: inline-block;
     background-color: #EBC22E;
     color: black;
     padding: 0.75rem 2rem;
-    border-radius: 9999px; /* Full rounded */
+    border-radius: 9999px;
+    /* Full rounded */
     text-decoration: none;
-  }
-  
-  .cta-button:hover {
+}
+
+.cta-button:hover {
     background-color: #d1a727;
-  }
+}
