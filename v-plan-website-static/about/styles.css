@@ -1,4 +1,6 @@
-/* styles/HeroSection.css */
+
+/* hero about  */
+
 .hero-section {
   position: relative;
   text-align: center;
@@ -65,7 +67,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #0056a0;
+  color: #2F4D7E;
   /* Ajusta el color si es necesario */
 }
 
@@ -141,6 +143,8 @@
   }
 }
 
+/* hero about  */
+
 .left-side {
   display: flex;
   flex-direction: column;
@@ -151,7 +155,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #0056a0;
+  color: #2F4D7E;
   /* Ajusta el color si es necesario */
 }
 
@@ -183,7 +187,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #0056a0;
+  color: #2F4D7E;
   /* Ajusta el color si es necesario */
 }
 
@@ -308,7 +312,7 @@
   font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #1e40af; /* Cambia este color a tu color azul deseado */
+  color: #2F4D7E; /* Cambia este color a tu color azul deseado */
 }
 
 .description {
