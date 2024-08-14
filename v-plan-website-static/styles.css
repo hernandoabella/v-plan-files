@@ -7,7 +7,6 @@ body {
 }
 
 /* header  */
-
 header {
     background-color: #2F4D7E;
 }
@@ -695,7 +694,7 @@ section.hero {
     border-radius: 0.5rem;
     overflow: hidden;
     height: 100%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Icon styling */
