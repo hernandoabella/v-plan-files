@@ -22,15 +22,6 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="/About">About</a></li>
-                <li class="dropdown">
-                    <a href="#">Solutions <img src="../images/down-arrow.svg" alt="Down Arrow"
-                            class="dropdown-arrow" /></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Bid Management</a></li>
-                        <li><a href="#">Estimation Services</a></li>
-                        <li><a href="#">Construction Management Software</a></li>
-                    </ul>
-                </li>
                 <li><a href="/learn">Learn</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/blog/">Blogs</a></li>
@@ -38,16 +29,15 @@
         </nav>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">About V Plan</h1>
+    <section class="about-v-section">
+        <div>
+            <h1>About V Plan</h1>
         </div>
     </section>
 
     <section class="introduction">
-        <div class="introduction-container container">
-            <div class="left-side">
+        <div class="container">
+            <div>
                 <h2 class="title">Introducing Our New Construction Division</h2>
                 <p class="description">
                     From estimating costs on your next project to finishing it up, V Plan has helped hundreds of
@@ -76,8 +66,7 @@
                 </div>
             </div>
 
-
-            <div class="right-side">
+            <div>
                 <img src="../images/hero-img-about-00.png" alt="Right Side Image" class="right-image" />
                 <hr class="divider" />
                 <p class="additional-info">
@@ -119,11 +108,11 @@
     </section>
 
 
-    <section class="services-section">
+    <section class="services">
         <h2 class="title">
             Realtraker™ — The Ultimate Construction Management Software
         </h2>
-        <p class="description">
+        <p>
             Realtraker™ is our custom management software that can help you throughout your project.
             <br />
             Realtraker™ allows you to take full control of your construction company, right from the Realtraker™ app to
@@ -131,8 +120,7 @@
         </p>
 
         <div class="services-container">
-
-            <div class="service-row">
+            <div class="service-row container">
                 <div class="service-item">
                     <img src="../images/icon-01.png" alt="Seamless Communication" class="icon" />
                     <span>
@@ -163,7 +151,7 @@
             </div>
 
 
-            <div class="service-row">
+            <div class="service-row container">
                 <div class="service-item">
                     <img src="../images/icon-about-02.png" alt="Cash Flow" class="icon" />
                     <span>
@@ -195,9 +183,8 @@
     </section>
 
     <section class="cta-section">
-        <div class="overlay"></div>
         <div class="content">
-            <h2>
+            <h2 class="">
                 Realtraker™ is your all-in-one solution for managing your entire workflow and keeping things under
                 budget, which helps your company increase profitability.
                 <br /><br />
@@ -211,8 +198,7 @@
     </section>
 
     <section class="our-origins">
-        <div class="grid-container">
-
+        <div class="grid-container container">
             <div class="text-container">
                 <h2 class="title">Our Origins</h2>
                 <p class="description">
@@ -226,7 +212,6 @@
                     companies improve their workflow and management throughout each new construction project.
                 </p>
             </div>
-
 
             <div class="image-container">
                 <img src="../images/section-img-about-01.png" alt="Raj Kachu" class="image" />
@@ -283,6 +268,7 @@
             document.getElementById('year').textContent = new Date().getFullYear();
         </script>
     </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>
