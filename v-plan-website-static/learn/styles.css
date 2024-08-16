@@ -1,33 +1,24 @@
-.hero-section {
-    position: relative;
+.learn-more-section {
+    
+}
+
+.learn-more-section {
     text-align: center;
-    color: white;
-    padding: 4rem 1.5rem;
-    /* Top padding and general padding */
-    background-image: url('../images/hero-img-about-01.png');
-    /* Replace with the correct path */
+    background-image: url('/images/hero-img-about-01.png');
     background-size: cover;
-    background-position: bottom;
-}
+    background-position: center;
+    color: #fff;
+    font-size: 2em;
+    padding: 2em;
+  }
+  
+  @media (max-width: 768px) {
+    .learn-more-section{
+      font-size: 1.5em;
+    }
+  }
 
-.overlay {
-    position: absolute;
-    inset: 0;
-    background-color: black;
-    opacity: 0.5;
-}
 
-.content {
-    position: relative;
-    z-index: 10;
-}
-
-.hero-heading {
-    font-size: 4rem;
-    /* Adjust as needed */
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
 
 /* Container for the section */
 .estimating-services {

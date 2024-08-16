@@ -13,7 +13,9 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo"><a href="/"><img src="./images/v-plan-logo-white.png" alt="logo" /></a></div>
+            <div class="logo">
+                <a href="/"><img src="./images/v-plan-logo-white.png" alt="logo" /></a>
+            </div>
             <div class="menu-toggle" id="menu-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -25,9 +27,9 @@
                     <a href="#">Solutions <img src="./images/down-arrow.svg" alt="Down Arrow"
                             class="dropdown-arrow" /></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Bid Management</a></li>
-                        <li><a href="#">Estimation Services</a></li>
-                        <li><a href="#">Construction Management Software</a></li>
+                        <li><a href="#bid-managment">Bid Management</a></li>
+                        <li><a href="#estimation-services">Estimation Services</a></li>
+                        <li><a href="#construction-management">Construction Management Software</a></li>
                     </ul>
                 </li>
                 <li><a href="/learn">Learn</a></li>
@@ -36,6 +38,7 @@
             </ul>
         </nav>
     </header>
+
 
     <section id="hero" class="hero">
         <div class="container">
@@ -51,12 +54,14 @@
 
             <div class="hero-right">
                 <h2 class="form-title">Schedule your next project with us!</h2>
-                <form id="contact-form" class="contact-form" action="https://formsubmit.co/projects@thevplan.com" method="POST">
+                <form id="contact-form" class="contact-form" action="https://formsubmit.co/projects@thevplan.com"
+                    method="POST">
                     <input type="text" name="name" placeholder="Name" class="form-input form-control" required />
                     <input type="email" name="email" placeholder="Email" class="form-input form-control" required />
                     <input type="tel" name="phone" placeholder="Phone" class="form-input form-control" required />
                     <input type="hidden" name="_cc" value="rajk@v-plan.ca,vitor@v-plan.ca">
-                    <textarea name="message" placeholder="Project Info" class="form-textarea form-control" rows="4" required></textarea>
+                    <textarea name="message" placeholder="Project Info" class="form-textarea form-control" rows="4"
+                        required></textarea>
                     <label class="checkbox-label">
                         <input type="checkbox" name="agree" class="form-checkbox" required />
                         <span>I agree to receive a callback or email response</span>
@@ -66,95 +71,108 @@
                     </button>
                 </form>
             </div>
-            
+
         </div>
     </section>
 
-    <section class="strategy-section container">
+    <section class="strategy-section">
+        <div class="container">
+            <div class="strategy-text">
+                <h2>Create a Winning Strategy</h2>
+                <p>
+                    With over 30 years of experience, V Plan’s team of experts can help you craft a strategy with
+                    estimations on project costs from start to finish.
+                    <br><br>
+                    We work with your company to look over projects, create estimates on materials costs, contractors
+                    needed, length of projects, and a whole lot more.
+                    <br><br>
+                    Getting estimates right is key to making a profit on construction projects. Because projects can
+                    change
+                    so dramatically throughout the process, you need to be ready to make changes on the fly, knowing
+                    your
+                    next problem before it happens.
+                </p>
+            </div>
 
-        <div class="strategy-text">
-            <h2>Create a Winning Strategy</h2>
-            <p>
-                With over 30 years of experience, V Plan’s team of experts can help you craft a strategy with
-                estimations on project costs from start to finish.
-                <br><br>
-                We work with your company to look over projects, create estimates on materials costs, contractors
-                needed, length of projects, and a whole lot more.
-                <br><br>
-                Getting estimates right is key to making a profit on construction projects. Because projects can change
-                so dramatically throughout the process, you need to be ready to make changes on the fly, knowing your
-                next problem before it happens.
-            </p>
-        </div>
 
-
-        <div class="strategy-image">
-            <img src="./images/section-img-01.png" alt="Strategy Image">
-        </div>
-    </section>
-
-    <section class="learn-section container">
-
-        <div class="learn-video">
-            <div class="video-wrapper">
-                <iframe title="Realtraker™ Overview" src="https://player.vimeo.com/video/657889548" frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div class="strategy-image">
+                <img src="./images/section-img-01.png" alt="Strategy Image">
             </div>
         </div>
+    </section>
 
-        <div class="learn-text">
-            <h2>Realtraker™ Is Your One-Stop Solution</h2>
-            <p>
-                Created from the ground up by V Plan, Realtraker™ is the only construction management software you need.
-                <br><br>
-                Realtraker™ has everything you need to keep your construction plans moving in the right direction, such
-                as communicating with your teams, securing necessary documents, and bidding on projects fast.
-                <br><br>
-                Our software helps you deliver your projects on time and with more profits. Keep track of the costs for
-                your equipment, vendors, and subcontractors — all in one place.
-                <br><br>
-                Access all of your information on the go with our cloud storage and keep up-to-date information right at
-                your fingertips.
-            </p>
-            <a href="#learn-more" class="learn-button">Learn More About: Realtraker™</a>
+    <section class="learn-section" id="construction-management">
+
+        <div class="container">
+            <div class="learn-video">
+                <div class="video-wrapper">
+                    <iframe title="Realtraker™ Overview" src="https://player.vimeo.com/video/657889548" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="learn-text">
+                <h2>Realtraker™ Is Your One-Stop Solution</h2>
+                <p>
+                    Created from the ground up by V Plan, Realtraker™ is the only construction management software you
+                    need.
+                    <br><br>
+                    Realtraker™ has everything you need to keep your construction plans moving in the right direction,
+                    such
+                    as communicating with your teams, securing necessary documents, and bidding on projects fast.
+                    <br><br>
+                    Our software helps you deliver your projects on time and with more profits. Keep track of the costs
+                    for
+                    your equipment, vendors, and subcontractors — all in one place.
+                    <br><br>
+                    Access all of your information on the go with our cloud storage and keep up-to-date information
+                    right at
+                    your fingertips.
+                </p>
+                <a href="#" class="learn-button">Learn More About: Realtraker™</a>
+            </div>
         </div>
     </section>
 
-    <section class="profitable-section container">
-        <div class="profitable-text">
-            <h2>Profitable Construction Projects With V Plan Estimates</h2>
-            <p>
-                Keep your costs on bidding, materials and subcontractors lower than you thought possible with V Plan’s
-                estimation service.
-                <br><br>
-                V Plan takes care of clients’ estimating needs using the latest software tools and decades of
-                experience. Our on-demand support will enable contractors to bid more and see higher profits in:
+    <section class="profitable-section" id="bid-managment">
+        <div class="container">
+            <div class="profitable-text">
+                <h2>Profitable Construction Projects With V Plan Estimates</h2>
+                <p>
+                    Keep your costs on bidding, materials and subcontractors lower than you thought possible with V
+                    Plan’s
+                    estimation service.
+                    <br><br>
+                    V Plan takes care of clients’ estimating needs using the latest software tools and decades of
+                    experience. Our on-demand support will enable contractors to bid more and see higher profits in:
+                    <br>
+                </p>
+
+                <ul>
+                    <li>Subcontractor Billing</li>
+                    <li>Material Costs</li>
+                    <li>Project Bidding</li>
+                    <li>Work Budget</li>
+                    <li>Employee Work Orders</li>
+                </ul>
+
+                <p>
+                    So whether you are in the planning phase or already working hard on your construction project, you
+                    can
+                    reduce your expenses and increase your profit with V Plan’s estimation service.
+                </p>
                 <br>
-            </p>
-
-            <ul>
-                <li>Subcontractor Billing</li>
-                <li>Material Costs</li>
-                <li>Project Bidding</li>
-                <li>Work Budget</li>
-                <li>Employee Work Orders</li>
-            </ul>
-
-            <p>
-                So whether you are in the planning phase or already working hard on your construction project, you can
-                reduce your expenses and increase your profit with V Plan’s estimation service.
-            </p>
-            <br>
-            <a href="/learn" class="learn-more-button">Learn More About V Plan Estimation</a>
-        </div>
+                <a href="/learn" class="learn-more-button">Learn More About V Plan Estimation</a>
+            </div>
 
 
-        <div class="profitable-image">
-            <img src="./images/image-01.png" alt="Profitable Construction Projects">
+            <div class="profitable-image">
+                <img src="./images/image-01.png" alt="Profitable Construction Projects">
+            </div>
         </div>
     </section>
 
-    <section class="services-section">
+    <section class="services-section" id="estimation-services">
         <div>
             <h2 class="section-title">
                 Get Unbelievable Value By Combining RealTraker™ <br> and V Plan Estimation Services
@@ -166,7 +184,8 @@
                         <img src="./images/icon-01.png" alt="Expert Support icon" class="service-icon">
                         <h3 class="service-title">Expert Support</h3>
                         <p class="service-text">
-                            Need help creating your next budget plan or need estimates on project costs? V Plan has the team
+                            Need help creating your next budget plan or need estimates on project costs? V Plan has the
+                            team
                             lined up to help you get as close as possible with your construction project estimates.
                         </p>
                     </div>
@@ -174,7 +193,8 @@
                         <img src="./images/icon-02.png" alt="Cloud Storage icon" class="service-icon">
                         <h3 class="service-title">Cloud Storage</h3>
                         <p class="service-text">
-                            Keep all of your project documents, contracts, plans, or anything else you need to keep on file
+                            Keep all of your project documents, contracts, plans, or anything else you need to keep on
+                            file
                             right in our secure cloud storage. At home or on the road, share documents with team members
                             quickly without needing to have your computer with you.
                         </p>
@@ -183,20 +203,24 @@
                         <img src="./images/icon-03.png" alt="Live Estimates icon" class="service-icon">
                         <h3 class="service-title">Live Estimates</h3>
                         <p class="service-text">
-                            Still using spreadsheets to track estimates? Our live estimates give you an easy and quick way
-                            to compile data needed for budget plans. Change your forecasts on the fly using Realtraker™’s
+                            Still using spreadsheets to track estimates? Our live estimates give you an easy and quick
+                            way
+                            to compile data needed for budget plans. Change your forecasts on the fly using
+                            Realtraker™’s
                             estimating software.
                         </p>
                     </div>
                 </div>
-    
+
                 <div class="service-grid container">
                     <div class="service-card">
                         <img src="./images/icon-04.png" alt="Daily Reports icon" class="service-icon">
                         <h3 class="service-title">Daily Reports</h3>
                         <p class="service-text">
-                            Keep your customers in the loop with Realtraker™’s daily report creator. Send daily updates on
-                            how each part of the project is going as well as updated estimates of costs and timelines. Your
+                            Keep your customers in the loop with Realtraker™’s daily report creator. Send daily updates
+                            on
+                            how each part of the project is going as well as updated estimates of costs and timelines.
+                            Your
                             customers will never be happier.
                         </p>
                     </div>
@@ -204,8 +228,10 @@
                         <img src="./images/icon-05.png" alt="Project Bidding icon" class="service-icon">
                         <h3 class="service-title">Project Bidding</h3>
                         <p class="service-text">
-                            Be faster and more efficient than your competitors. Realtraker™ has quick-bidding built right
-                            into the software so you can ensure that your bid for your next project gets to your potential
+                            Be faster and more efficient than your competitors. Realtraker™ has quick-bidding built
+                            right
+                            into the software so you can ensure that your bid for your next project gets to your
+                            potential
                             client first with actual estimates. Get an increased workload for your company with our
                             easy-to-use bidding system.
                         </p>
@@ -220,37 +246,38 @@
         <a href="#contact" class="cta-button">Start Your Realtraker™ Free Trial Now</a>
     </section>
 
-    <section class="profitable-section container">
-        <div class="text-content">
-            <h2 class="title">Our Projects</h2>
-            <p class="description">
-                Since 2015, V Plan has taken on over 1500 projects to help
-                construction-based businesses succeed in creating more profit while
-                maintaining budgets and turnaround times.
-                <br><br>
-                V Plan has a team that can handle any size workload for your
-                company. We give the same dedicated work to all of our customer’s
-                projects, no matter how many we have on the go at once (we have
-                handled at least 5 projects every single week since launch and 450 in
-                the last two years).
-                <br><br>
-                You always get the time and care your business deserves from V Plan.
-                <br><br>
-                We pride ourselves on giving every client the attention to detail and
-                quality of work that V Plan has been renowned for, no matter the size
-                of the client or project they are working on.
-            </p>
-        </div>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2 class="title">Our Projects</h2>
+                <p class="description">
+                    Since 2015, V Plan has taken on over 1500 projects to help
+                    construction-based businesses succeed in creating more profit while
+                    maintaining budgets and turnaround times.
+                    <br><br>
+                    V Plan has a team that can handle any size workload for your
+                    company. We give the same dedicated work to all of our customer’s
+                    projects, no matter how many we have on the go at once (we have
+                    handled at least 5 projects every single week since launch and 450 in
+                    the last two years).
+                    <br><br>
+                    You always get the time and care your business deserves from V Plan.
+                    <br><br>
+                    We pride ourselves on giving every client the attention to detail and
+                    quality of work that V Plan has been renowned for, no matter the size
+                    of the client or project they are working on.
+                </p>
+            </div>
 
-
-        <div class="image-content">
-            <img src="./images/hero-img-solutions-02.png" alt="Profitable Construction Projects" class="image">
+            <div class="image-content">
+                <img src="./images/hero-img-solutions-02.png" alt="Profitable Construction Projects" class="image">
+            </div>
         </div>
     </section>
 
     <section class="pricing-section">
         <h2 class="section-title">Plans</h2>
-        <div class="plans-container container">
+        <div class="container">
             <div class="plan-card standard-card">
                 <img src="./images/plan-01.png" alt="Standard Plan" class="plan-icon">
                 <h3 class="plan-title">Standard</h3>
@@ -314,7 +341,7 @@
         <h2 class="section-title">What Our Clients Are Saying</h2>
 
         <div class="testimonials-container">
-            <button class="carousel-button prev-button">&#9664;</button>
+            <button class="carousel-button prev-button"><img src="/images/left-arrow-backup-2-svgrepo-com.svg" alt="arrow" width="20px"></button>
             <div class="testimonials-wrapper">
                 <div class="testimonials-carousel">
                     <div class="testimonial">
@@ -353,7 +380,7 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-button next-button">&#9654;</button>
+            <button class="carousel-button next-button"><img src="/images/right-arrow-backup-2-svgrepo-com.svg" alt="arrow" width="20px"></button>
         </div>
     </section>
 

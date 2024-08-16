@@ -36,5 +36,5 @@ document.addEventListener('DOMContentLoaded', function () {
   // Optional: Auto-slide every 5 seconds
   setInterval(() => {
     nextButton.click();
-  }, 5000);
+  }, 10000);
 });
