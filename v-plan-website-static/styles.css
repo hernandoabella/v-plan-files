@@ -877,9 +877,7 @@ section.hero {
 /* footer  */
 .footer {
     background-color: #0A0A0A;
-    /* Fondo gris oscuro casi negro */
     color: #fff;
-    /* Color del texto en el footer */
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -938,10 +936,6 @@ section.hero {
 
     .footer .social-icons {
         gap: 0.5rem;
-    }
-
-    .footer .icon {
-        width: 20px;
     }
 }
 
