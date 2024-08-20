@@ -1,6 +1,4 @@
-.learn-more-section {
-    
-}
+/*Header*/
 
 .learn-more-section {
     text-align: center;
@@ -10,134 +8,46 @@
     color: #fff;
     font-size: 2em;
     padding: 2em;
-  }
-  
-  @media (max-width: 768px) {
-    .learn-more-section{
-      font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .learn-more-section {
+        font-size: 1.5em;
     }
-  }
+}
 
+/*Header*/
 
+/*estimating services*/
 
-/* Container for the section */
 .estimating-services {
     background-color: white;
     color: black;
+    padding: 2em;
 }
 
-/* Grid styling */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-@media (min-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
+@media (max-width: 768px) {
+    .learn-more-section {
+        font-size: 1.5em;
     }
 }
 
-/* Text content styling */
-.text-content {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem;
-}
+/*estimating services*/
 
-.text-content p {
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
-}
+/*vplan estimation*/
 
-/* Image content styling */
-.image-content {
-    display: flex;
-    justify-content: center;
-    padding: 2.5rem;
-}
-
-.image-content img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Section styling */
 .vplan-estimation {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: black;
+    padding: 2em;
 }
 
-/* Content container styling */
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0 1.5rem;
-}
 
-/* Responsive grid layout */
-@media (min-width: 768px) {
-    .content-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
 
-/* Left side styling */
-.left-side {
-    flex: 1;
-    padding: 2.5rem;
-}
+/*vplan estimation*/
 
-.left-side h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #2F4D7E;
-}
 
-.left-side p {
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
-}
-
-/* Right side styling */
-.right-side {
-    flex: 1;
-}
-
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
+/*software section*/
 .software-section {
-    padding: 4rem 2.5rem;
+    padding: 2em;
     background-color: white;
 }
 
@@ -145,27 +55,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-}
-
-@media (min-width: 768px) {
-    .content-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-    }
-}
-
-.left-side {
-    padding: 2.5rem;
-}
-
-.left-side p {
-    margin-bottom: 2rem;
-}
-
-.right-side {
-    display: flex;
-    justify-content: center;
-    padding: 2.5rem;
 }
 
 .software-image {
@@ -185,18 +74,6 @@
     gap: 2rem;
 }
 
-@media (min-width: 640px) {
-    .icon-row {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .icon-row {
-        grid-template-columns: repeat(5, 1fr);
-    }
-}
-
 .icon-item {
     display: flex;
     flex-direction: column;
@@ -210,6 +87,41 @@
     margin-bottom: 1rem;
 }
 
+
+@media (min-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .icon-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .icon-row {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/*software section*/
+
+
+/*video section*/
+.video-section {
+    padding: 2em;
+}
+
+.video-wrapper {
+    width: 100%;
+}
+/*video section*/
+
+/*cta section*/
+
 .cta-section {
     position: relative;
     padding: 4rem 2.5rem;
@@ -218,30 +130,7 @@
     background-image: url('../images/hero-img-about-01.png');
     background-size: cover;
     background-position: bottom;
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2.5rem;
-}
-
-.content {
-    position: relative;
-    z-index: 10;
-    padding: 2.5rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-}
-
-.highlight {
-    font-weight: 800;
-}
+} 
 
 .cta-button {
     display: inline-block;
@@ -256,3 +145,5 @@ h2 {
 .cta-button:hover {
     background-color: #d1a727;
 }
+
+/*cta section*/
