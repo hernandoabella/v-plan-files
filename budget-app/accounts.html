@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+    <div class="p-5">
+
+
+        <button id="open-form-btn"><img src="/images/plus.svg" alt="cross-icon" width="10px"> New Project</button>
+
+        <div id="form-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <form id="project-form">
+                    <h2>New Project</h2>
+
+                    <div>
+                        <label for="project-name" class="fw-bold">Project Name:</label>
+                        <input type="text" id="project-name" name="projectName" required>
+
+                        <label for="location" class="fw-bold">Location:</label>
+                        <input type="text" id="location" name="location" required>
+
+                        <label for="date" class="fw-bold">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="report" class="fw-bold">Report:</label>
+                        <input type="text" id="report" name="report" required>
+
+                        <label for="payment" class="fw-bold">Payment ($):</label>
+                        <input type="number" id="payment" name="payment" required>
+
+                        <label for="expenses" class="fw-bold">Expenses ($):</label>
+                        <input type="number" id="expenses" name="expenses" required>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="expense-category" class="fw-bold">Expense Category:</label>
+                        <input type="text" id="expense-category" name="expenseCategory"
+                            placeholder="Search or select from list" required>
+
+                        <label for="cmf" class="fw-bold">CMF ($):</label>
+                        <input type="number" id="cmf" name="cmf" required>
+                    </div>
+                    <br />
+
+                    <button type="submit"><img src="/images/plus.svg" alt="cross-icon" width="10px"> Add
+                        Project</button>
+                </form>
+            </div>
+        </div>
+
+        <table class="table stripped-table table-bordered table-stripped">
+            <div class="p-20">
+                <div class="text-center fw-bold">34 Rolwy Dr. Palgrave</div>
+                <div class="text-center fw-bold">Statement of project cost</div>
+            </div>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>August 10-2024</th>
+                </tr>
+                <tr class="bg-green-light">
+                    <th></th>
+                    <th>Payment</th>
+                    <th>Expenses</th>
+                    <th>Construction Managment</th>
+                    <th>Expense Category</th>
+                    <th>August 10-2024</th>
+                    <th>Remaining Budget</th>
+                </tr>
+            </thead>
+            <tbody id="project-table-body">
+                <tr>
+                    <td class="fw-bold">TOTAL</td>
+                    <td class="fw-bold green">$30,000.00</td>
+                    <td class="fw-bold red">$28.089.59</td>
+                    <td class="fw-bold">$4,213.44</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">-$2,303.03</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">$2,027.69</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">Plywood</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">$3,900.01</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">Studs - 2x4 and 2x6 for Walls</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">$4,386.30</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">Joists and Rim Board and 2x6x 12' new wall</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">$1,437.70</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">3/4" ply</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">$1,200.00</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">Bin</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">$225.60</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">Tarp</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">$8,000.00</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">Demolition</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">$2,912.29</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">Trusses</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">Windows</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">$4,000.00</td>
+                    <td class="fw-bold"></td>
+                    <td class="fw-bold">Farming Deposit</td>
+                    <td class="fw-bold"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/script.js"></script>
+
+
+</body>
+
+</html>
