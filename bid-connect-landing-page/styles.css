@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.main-section {
+    background: url('/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-paragraph {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+}
+
+.btn-outline-custom {
+    border: 2px solid #000;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.dark-orange {
+    color: #D34516;
+}
+
+.dark-orange-bg {
+    background: #D34516;
+}
+
+/* navigation */
+
+
+/* navigation */
+
+
+
+.hero-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.hero-card img {
+    position: relative;
+
+}
+
+.circle-2 {
+    width: 76px;
+    height: 76px;
+    background: #f2b705;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* bid */
+.bid-container {
+    position: relative;
+    top: -100px;
+    background: #fef8f1;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 32px 32px 0px 0px;
+}
+
+/* Estilo para la barra del rango */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #e4ac05 0%, #d7d2ce 0%);
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s, background 0.3s ease-in-out;
+}
+
+/* Cambiar opacidad cuando se hace hover */
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+/* Estilo para la bolita (thumb) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #e4ac05;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Estilo para la bolita en navegadores de Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #e4ac05;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Estilo para la barra de la bolita en navegadores de Firefox */
+input[type="range"]::-moz-range-track {
+    background: #d7d2ce;
+    height: 8px;
+    border-radius: 5px;
+}
+
+/* Cambiar el color de la bolita cuando se hace hover */
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #d49a00;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #d49a00;
+}
+
+
+/* bid */
+
+
+/* services */
+.services {
+    padding-bottom: 200px;
+}
+
+/* services */
+
+/* partners */
+
+.partners {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 200px;
+    background-color: #151524;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.yeah {
+    position: absolute;
+}
+
+/* partners */
+
+/* featured */
+
+.featured {
+    height: 100vh;
+    padding-top: 200px !important;
+}
+
+.featured-inner {
+    background: url("/images/01.png");
+    background-repeat: no-repeat;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(-270deg, #151524 0%, rgba(21, 21, 36, 0) 100%);
+    content: "";
+    height: 563px;
+    position: absolute;
+    width: 200px;
+    z-index: 99999;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 380px;
+    margin: 0px 20px;
+}
+
+/* featured */
+
+
+/* contact */
+
+.contact {
+    padding-top: 200px !important;
+}
+
+.world {
+    background: url(/images/world.png);
+    background-position: center -40px;
+    height: 100vh;
+}
+
+.contact-card {
+    background: url(/images/contact-card-bg.svg);
+}
+
+/* contact */
+
+/* newsletter */
+
+.subscribe {
+    background: #FFF9F1;
+}
+
+/* newsletter */
+
+/* footer */
+
+footer {
+    border-top: 1px solid #00000033;
+}
+
+/* footer */
+
+/* extra styles */
+
+.pt-120 {
+    padding-top: 120px;
+}
+
+.fs-50 {
+    font-size: 50px; 
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+/* extra styles */
