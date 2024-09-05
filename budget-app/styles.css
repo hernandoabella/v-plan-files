@@ -72,3 +72,11 @@ th {
 .p-20 {
     padding: 20px;
 }
+
+.php-blue-dark {
+    background: #ABC8FF;
+}
+
+.php-blue {
+    background: #D3E2FF;
+}
