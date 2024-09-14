@@ -21,10 +21,11 @@
       </div>
     </div>
     <div class="bg-blue-dark">
-      <p class="text-center text-light p-3">
+      <p class="text-center text-light p-3 m-0">
         © 2024 BuilderHubs. All Rights Reserved.
       </p>
     </div>
+    
   </footer>
 </template>
 
