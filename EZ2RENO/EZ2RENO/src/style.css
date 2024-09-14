@@ -4,9 +4,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", system-ui;
+  font-family: "Montserrat", system-ui !important;
 }
 
 .bg-blue-dark {
-  background: #2300fb;
+  background: #2300fb !important;
+}
+
+.blue-color {
+  color: #2947A9;
+}
+
+.gray-color {
+  color: #A9AAAD;
 }
